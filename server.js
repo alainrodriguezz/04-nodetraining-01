@@ -29,6 +29,12 @@ app.get('/about',(req,res)=>{
 	});
 })
 
+app.get('/projects',(req,res)=>{
+	res.render('projects',{
+		title: 'Projects Title'
+	})
+})
+
 app.listen(PORT,()=>{
 	console.log('listening');
 });
